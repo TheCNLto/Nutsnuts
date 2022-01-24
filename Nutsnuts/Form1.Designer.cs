@@ -34,6 +34,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.átváltóToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.nutsnuts = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
@@ -76,7 +77,8 @@
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.doboToolStripMenuItem});
+            this.doboToolStripMenuItem,
+            this.átváltóToolStripMenuItem});
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
             this.homeToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.homeToolStripMenuItem.Text = "Programs";
@@ -84,9 +86,16 @@
             // doboToolStripMenuItem
             // 
             this.doboToolStripMenuItem.Name = "doboToolStripMenuItem";
-            this.doboToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.doboToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.doboToolStripMenuItem.Text = "Dobo";
             this.doboToolStripMenuItem.Click += new System.EventHandler(this.doboToolStripMenuItem_Click);
+            // 
+            // átváltóToolStripMenuItem
+            // 
+            this.átváltóToolStripMenuItem.Name = "átváltóToolStripMenuItem";
+            this.átváltóToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.átváltóToolStripMenuItem.Text = "Átváltó";
+            this.átváltóToolStripMenuItem.Click += new System.EventHandler(this.átváltóToolStripMenuItem_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -129,7 +138,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "NutsNuts";
+            this.Text = "NutsNuts - Aplha Version";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -151,5 +160,6 @@
         private TableLayoutPanel tableLayoutPanel1;
         private Label nutsnuts;
         private ToolStripMenuItem doboToolStripMenuItem;
+        private ToolStripMenuItem átváltóToolStripMenuItem;
     }
 }

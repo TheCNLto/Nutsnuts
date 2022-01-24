@@ -13,5 +13,11 @@ namespace Nutsnuts
             dobo dobo1 = new dobo();
             dobo1.Show();
         }
+
+        private void átváltóToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            valto valto1 = new valto();
+            valto1.Show();
+        }
     }
 }
