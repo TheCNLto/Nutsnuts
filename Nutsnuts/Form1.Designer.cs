@@ -37,6 +37,7 @@
             this.átváltóToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.nutsnuts = new System.Windows.Forms.Label();
+            this.countdownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -78,7 +79,8 @@
             // 
             this.homeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.doboToolStripMenuItem,
-            this.átváltóToolStripMenuItem});
+            this.átváltóToolStripMenuItem,
+            this.countdownToolStripMenuItem});
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
             this.homeToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.homeToolStripMenuItem.Text = "Programs";
@@ -99,6 +101,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
@@ -117,6 +120,8 @@
             // nutsnuts
             // 
             this.nutsnuts.AutoSize = true;
+            this.nutsnuts.BackColor = System.Drawing.Color.Transparent;
+            this.nutsnuts.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nutsnuts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.nutsnuts.Font = new System.Drawing.Font("Snap ITC", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.nutsnuts.Location = new System.Drawing.Point(269, 134);
@@ -125,6 +130,13 @@
             this.nutsnuts.TabIndex = 0;
             this.nutsnuts.Text = "NutsNuts";
             this.nutsnuts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // countdownToolStripMenuItem
+            // 
+            this.countdownToolStripMenuItem.Name = "countdownToolStripMenuItem";
+            this.countdownToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.countdownToolStripMenuItem.Text = "countdown";
+            this.countdownToolStripMenuItem.Click += new System.EventHandler(this.countdownToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -161,5 +173,6 @@
         private Label nutsnuts;
         private ToolStripMenuItem doboToolStripMenuItem;
         private ToolStripMenuItem átváltóToolStripMenuItem;
+        private ToolStripMenuItem countdownToolStripMenuItem;
     }
 }

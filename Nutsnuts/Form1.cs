@@ -19,5 +19,11 @@ namespace Nutsnuts
             valto valto1 = new valto();
             valto1.Show();
         }
+
+        private void countdownToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            countdown countdown1 = new countdown();
+            countdown1.Show();
+        }
     }
 }
