@@ -29,7 +29,10 @@ namespace Nutsnuts
         {
             p = ltime / 60;
             masp = ltime - (p*60);
-            label1.Text = Convert.ToString(p) + ":" + Convert.ToString(masp);
+            if(masp < 10)
+            {
+                label1.Text = Convert.ToString(p) + ":" + Convert.ToString(masp);
+            }
         }
         public countdown()
         {
